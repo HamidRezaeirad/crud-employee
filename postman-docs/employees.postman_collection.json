@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "d10f5b2d-2269-4ef6-9700-446cc5d1a389",
+		"name": "employees",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all employee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"employees"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "UNEMPLOYED",
+							"disabled": true
+						},
+						{
+							"key": "fisrtName",
+							"value": "hamid",
+							"disabled": true
+						},
+						{
+							"key": "lastName",
+							"value": "rezaeirad",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get employee by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/employees/e6451b3a-4bcf-490b-8e9f-18f018a02b39",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"employees",
+						"e6451b3a-4bcf-490b-8e9f-18f018a02b39"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update employee status",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"status\":\"UNEMPLOYED\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/employees/e6451b3a-4bcf-490b-8e9f-18f018a02b39",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"employees",
+						"e6451b3a-4bcf-490b-8e9f-18f018a02b39"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\":\"hamid\",\n    \"lastName\":\"zare\",\n    \"status\":\"UNEMPLOYED\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

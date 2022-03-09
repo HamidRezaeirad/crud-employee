@@ -68,7 +68,7 @@ Swagger is used to generate API document automatically. Follow below steps to se
 $ npm run start
 ```
 
-2. Open following address `http://localhost:3001/swagger/` in browser
+2. Open following address `http://localhost:3000/swagger/` in browser
 
 <img src="/assets/swagger.png" width="500">
 
